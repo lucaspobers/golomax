@@ -1,1 +1,1 @@
-# golomax
+Debido a que en mi trabajo actual necesitaba una herramienta que me permita visualizar de manera clara las facturas que los clientes nos adeudaban, intente usar los conocimientos previamente adquiridos en Python para crear esta aplicacion.
