@@ -50,7 +50,7 @@ root=Tk()
 root.geometry('1080x720')
 root.title("Golomax")
 
-# ------------------------------- JUANCITO
+# -------------- PANDAS --------------
 
 datos = pd.read_csv("reporte.csv", sep=",", skiprows=6, usecols=(22,24,37,38,40,42,44,46), header=0)
 
@@ -120,18 +120,11 @@ cuadro.configure(xscrollcommand=scroll_cuadrox.set, yscrollcommand=scroll_cuadro
 scroll_cuadrox.pack(side="bottom", fill="x")
 scroll_cuadroy.pack(side="right", fill="y")
 
-# print(df.columns.tolist())
-
 
 # Lista Desplegable
 lista_desplegable = ttk.Combobox(frame1, values= list(vendedores), state="readonly")
 lista_desplegable.place(x=20, y=50)
 
-# Pendientes:
-# - Hacer que SOLO muestre las facturas
-# - Hacer que los widgets ajusten el contenido al contenedor en donde estan
-# - Ajustar las columnas para que quedo prolijo
-# - Ver si se puede hacer que el reporte se descarque solo cuando abro la app/toco un boton
 
 
 
